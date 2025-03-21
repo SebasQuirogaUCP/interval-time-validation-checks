@@ -91,13 +91,13 @@ export const TimeInputs = () => {
   return (
     <Stack className="p-6 bg-white rounded-lg shadow-lg">
       <Title className="text-xl font-semibold text-gray-800">
-        Test Available Time Window
+        Available window time
       </Title>
       <Text fw={200}>Define your availability window</Text>
       <Group grow className="gap-4">
         <div className="flex flex-col gap-2 p-4 bg-gray-50 rounded-lg shadow-md w-64">
           <label className="text-sm font-medium text-gray-700">
-            Start Time
+            Available start time
           </label>
           <TimeInput
             value={availableStartTime}
@@ -110,7 +110,9 @@ export const TimeInputs = () => {
         </div>
 
         <div className="flex flex-col gap-2 p-4 bg-gray-50 rounded-lg shadow-md w-64">
-          <label className="text-sm font-medium text-gray-700">End Time</label>
+          <label className="text-sm font-medium text-gray-700">
+            Available end time
+          </label>
           <TimeInput
             value={availableEndTime}
             onChange={(event) => setAvailableEndTime(event.currentTarget.value)}
@@ -121,13 +123,13 @@ export const TimeInputs = () => {
       </Group>
 
       <Title className="text-xl font-semibold text-gray-800">
-        Against the Clock
+        Test window time
       </Title>
       <Text fw={200}>Set a testing time range</Text>
       <Group grow className="gap-4">
         <div className="flex flex-col gap-2 p-4 bg-gray-50 rounded-lg shadow-md w-64">
           <label className="text-sm font-medium text-gray-700">
-            Start Time
+            Testing start time
           </label>
           <TimeInput
             value={testStartTime}
@@ -140,7 +142,9 @@ export const TimeInputs = () => {
         </div>
 
         <div className="flex flex-col gap-2 p-4 bg-gray-50 rounded-lg shadow-md w-64">
-          <label className="text-sm font-medium text-gray-700">End Time</label>
+          <label className="text-sm font-medium text-gray-700">
+            Testing end time
+          </label>
           <TimeInput
             value={testEndTime}
             onChange={(event) => setTestEndTime(event.currentTarget.value)}
